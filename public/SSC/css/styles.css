@@ -1,0 +1,71 @@
+body{
+	padding:0px;
+	margin:0px;
+	background:#f9f9f9;
+	color:#848484;
+	font:10px/14px Tahoma, sans-serif;
+}
+
+fieldset {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.fieldset1 {
+box-shadow: 8px 8px 6px #808080;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.fieldset2 {
+box-shadow: 8px 8px 6px #FFD700;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.fieldset3 {
+box-shadow: 8px 8px 6px #3333CC;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.fieldset4 {
+box-shadow: 8px 8px 6px #66CC00;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.fieldset5 {
+box-shadow: 3px 3px 1px #808080;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+.text1 {
+	font: 14px/14px Tahoma, sans-serif;
+	color:#052578;
+	font-weight:normal;
+}
+
+.text2 {
+	font: 16px/16px Tahoma, sans-serif;
+	color:#052578;
+	font-weight:normal;
+}
+#graph{
+	align:center;
+	width:400px;
+	height:300px;
+	float:left;
+	border:1px dashed gainsboro;
+}
+
+#graph2{
+	
+	width:400px;
+	height:300px;
+	float:left;
+	border:1px dashed gainsboro;
+}
+
+

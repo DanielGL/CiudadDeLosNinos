@@ -1,0 +1,550 @@
+<html>
+
+	<head>
+	<title>Ciudad de los Ni&ntilde;os - Proceso Admisi&oacute;n - Inscripci&oacute;n </title>
+	<link rel="shortcut icon" href="imagenes/icono.ico" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="validacionesForma1.js"></script>
+	<script type="text/javascript">
+	<!--
+	//Obtener la fecha. 
+	fecha = new Date();
+	dia = fecha.getDate();
+	mes = fecha.getMonth();
+	año = fecha.getFullYear();
+	
+	
+	//Mes
+	if(mes == 0) 
+	mostrarmes = "Enero " 
+
+	else if(mes ==1) 
+	mostrarmes = "Febrero " 
+
+	else if(mes ==2) 
+	mostrarmes = "Marzo " 
+
+	else if(mes ==3) 
+	mostrarmes = "Abril " 
+
+	else if(mes ==4) 
+	mostrarmes = "Mayo " 
+
+	else if(mes ==5) 
+	mostrarmes = "Junio " 
+
+	else if(mes ==6) 
+	mostrarmes = "Julio " 
+
+	else if(mes ==7) 
+	mostrarmes = "Agosto " 
+
+	else if(mes ==8) 
+	mostrarmes = "Septiembre " 
+
+	else if(mes ==9) 
+	mostrarmes = "Octubre " 
+
+	else if(mes ==10) 
+	mostrarmes = "Noviembre " 
+
+	else if(mes ==11) 
+	mostrarmes = "Diciembre "
+	//-->
+
+	</script>
+	</head>
+	
+	<body>
+		<form name='forma' method='post' action='registro.php' onSubmit="javascript:return validacionesXXX();"> 
+		<table style="HEIGHT:40%;WIDTH:100%;" class="text1">
+		
+		<tr>
+		<td style="HEIGHT:100%;WIDTH:20%;"> </td>
+	
+		
+		<td style="HEIGHT:100%;WIDTH:60%;">
+		<fieldset class="fieldset1">
+		
+		<table style="HEIGHT:100%;WIDTH:100%;">
+		<tr>
+		<td  style="HEIGHT:100%;WIDTH:20%;">
+		<img src="imagenes/logo.jpg" alt="Logo Ciudad de los Niños">
+		</td>
+		<td  style="HEIGHT:100%;WIDTH:60%;">
+		<center> Direcci&oacute;n de Desarrollo Social y Comunicaci&oacute;n </center>
+		<center> Proceso de Admisi&oacute;n-Inscripci&oacute;n </center>
+		<br>
+		<h1 align="center"> PRE-SOLICITUD DE BECA </h1>
+		</td>
+		<td  style="HEIGHT:100%;WIDTH:20%;">
+		<center> RE-AI-003 </center>
+		<center> Versi&oacute;n 1 </center>
+		<center> <script>document.write(dia+" de "+mostrarmes+" del "+año+"");</script> </center>
+		</td>
+		</tr>		
+		</table>
+		<br>
+		
+		<fieldset style="border:3px solid gray">
+			<br>
+			Fecha de solicitud:
+			<br>
+			D&iacute;a:
+			<select name="dia_solicitud">
+				<option value="none">--</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			Mes:
+			<select name="mes_solicitud">
+					<option value="none">--</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			</select>
+			A&ntilde;o: <input type="text"  onblur="checarFecha(this)" name="ano_solicitud"/>
+			<br>
+			<br>
+			Fecha de ingreso de la familia:
+			<br>
+			D&iacute;a:
+			<select name="dia_ingreso">
+				<option value="none">--</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			Mes:
+			<select name="mes_ingreso">
+					<option value="none">--</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			</select>
+			A&ntilde;o: <input type="text" onblur="checarFecha(this)" name="ano_ingreso"/>
+			<br>
+			<br>
+			¿Tiene usted hijo(as) actualmente en Ciudad de los Ni&ntilde;os?
+			<br>
+			<label for="si_hijos">Si</label><input type="radio" name="hijos" value="si_hijos" id="si_hijos" />
+			<label for="no_hijos">No</label><input type="radio" name="hijos" value="no_hijos" id="no_hijos" />
+		</fieldset>
+		
+		<br>
+
+		<fieldset style="border:2px solid blue">
+		<legend> <img src="imagenes/datos.jpg" > </legend>
+			
+			 <br>
+			 Nombre del alumno: 
+			 <input type="text" name="apellidoPaternoAlumno" onblur="checarTextos(this)" placeholder="Apellido paterno"/>
+			 <input type="text" name="apellidoMaternoAlumno" onblur="checarTextos(this)" placeholder="Apellido materno"/>
+			 <input type="text" name="nombre_alumno"         onblur="checarTextos(this)" placeholder="Nombre(s)"/>			 		 
+			 <br>
+			 <br>
+			 Fecha de nacimiento:
+			 <br>
+			 <br>
+			 D&iacute;a:
+			 <select name="dia_nacimiento">
+				<option value="none">--</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			Mes:
+			<select name="mes_nacimiento">
+					<option value="none">--</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			</select>
+			A&ntilde;o: <input type="text" onblur="checarFecha(this)" name="ano_nacimiento"/>
+			 <br>			 
+			 <br>
+			 Edad:<input type="text" name="edad" onblur="checarEdad(this)" placeholder="Edad"/>
+			 <br>
+			 <br>
+			 Lugar de nacimiento: 
+			 <input type="text" name="municipio"   onblur="checarTextos(this)" placeholder="Municipio"/>
+			 <select name="estado">	
+					<option value="none"> Estado </option>
+					<option value="Aguascalientes"> Aguascalientes </option>
+					<option value="Baja California Norte">Baja California Norte</option>
+					<option value="Baja California Sur">Baja California Sur</option>
+					<option value="Campeche">Campeche</option>
+					<option value="Coahuila">Coahuila</option>
+					<option value="Chiapas">Chiapas</option>
+					<option value="Chihuahua">Chihuahua</option>
+					<option value="Durango">Durango</option>
+					<option value="Estado de México">Estado de M&eacute;xico</option>
+					<option value="Guanajuato">Guanajuato</option>
+					<option value="Guerrero">Guerrero</option>
+					<option value="Hidalgo">Hidalgo</option>
+					<option value="Jalisco">Jalisco</option>
+					<option value="Michoacán">Michoac&aacute;n</option>
+					<option value="Morelos">Morelos</option>
+					<option value="DF">M&eacute;xico, D.F.</option>
+					<option value="Nayarit">Nayarit</option>
+					<option value="Nuevo León">Nuevo Le&oacute;n</option>
+					<option value="Oaxaca">Oaxaca</option>
+					<option value="Puebla">Puebla</option>
+					<option value="Querétaro">Quer&eacute;taro</option>
+					<option value="Quintana Roo">Quintana Roo</option>
+					<option value="San Luis Potosí">San Luis Potos&iacute;</option>
+					<option value="Sinaloa">Sinaloa</option>
+					<option value="Sonora">Sonora</option>
+					<option value="Tabasco">Tabasco</option>
+					<option value="Tamaulipas">Tamaulipas</option>
+					<option value="Taxcala">Taxcala</option>
+					<option value="Veracruz">Veracruz</option>
+					<option value="Yucatán">Yucat&aacute;n</option>
+					<option value="Zacatecas">Zacatecas</option>
+					<option value="Otro">Otro</option>
+				</select>				 		 
+			 <input type="text" name="pais"  onblur="checarTextos(this)" placeholder="Pais"/>
+			 <br>
+			 <br>
+			 CURP: <input type="text" name="curp" onblur="checarCurp(this)" placeholder="Curp"/>
+			 <br>
+			 <br>	
+			 Sexo:
+			<label for="varon">Varon</label><input type="radio" name="sexo" value="varon" id="varon" />
+			<label for="mujer">Mujer</label><input type="radio" name="sexo" value="mujer" id="mujer" />
+			<br>	
+		</fieldset>
+		
+		<br>
+		
+		<fieldset style="border:2px solid blue">
+		<legend> <img src="imagenes/nivelestudios.jpg"> </legend>
+			<br>	
+			Nivel al que desea ingresar:
+			<br>
+			<br>
+			<label for="primaria">Primaria</label><input type="radio" name="nivel_estudio" value="primaria" id="primaria" />
+			<label for="secundaria">Secundaria</label><input type="radio" name="nivel_estudio" value="secundaria" id="secundaria" />
+			<label for="preparatoria">Preparatoria</label><input type="radio" name="nivel_estudio" value="preparatoria" id="preparatoria" />
+			<br>	
+			<br>
+			Grado a cursar: 
+			<select name="grado">
+					<option value="none">--</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			</select>
+			
+			<!-- Estos campos decidí no validarlos, ya que pues las escuelas y calles pueden contener números
+			cosas raras,etc entonces mejor las voy a normalizar ya en el registro.php--> 
+			<br>
+			<br>
+			Escuela de procedencia <input type="text" name="escuela_procedencia" placeholder="Escuela de procendencia"/>
+			<br>
+			<br>
+			Ubicaci&oacute;n <input type="text" name="calle_escuela" placeholder="Calle"/><input type="text" name="colonia_escuela" placeholder="Colonia"/>
+			<br>
+			<br>
+			Calificaci&oacute;n final del grado anterior: <input type="text" name="ultima_calificacion"  onblur="checarCalif(this)" placeholder="Escala del 1 al 10">
+		</fieldset>
+
+		<br>
+		
+		<fieldset style="border:2px solid red">
+		<legend> <img src="imagenes/domicilio.jpg"> </legend>
+				<br>
+				Calle: <input type="text" name="calle" placeholder="Calle"/>
+				No.<input type="text" name="numero"  onblur="checarNumeros(this)"placeholder="No."/> 
+				<br>				
+				<br>
+				Entre calles: <input type="text" name="entre_calles" placeholder="Entre calles"/>				
+				<br>
+				<br>
+				Colonia: <input type="text" name="colonia" placeholder="Colonia"/>			
+				C.P. <input type="text" name="cp"  onblur="checarNumeros(this)" placeholder="C.P."/>
+				<br>
+				<br>
+				Ciudad: <input type="text" name="ciudad_domicilio" placeholder="Ciudad"/>
+				Estado: 
+				<select name="estado_domicilio">	
+					<option value="none"> --- </option>
+					<option value="Aguascalientes"> Aguascalientes </option>
+					<option value="Baja California Norte">Baja California Norte</option>
+					<option value="Baja California Sur">Baja California Sur</option>
+					<option value="Campeche">Campeche</option>
+					<option value="Coahuila">Coahuila</option>
+					<option value="Chiapas">Chiapas</option>
+					<option value="Chihuahua">Chihuahua</option>
+					<option value="Durango">Durango</option>
+					<option value="Estado de México">Estado de M&eacute;xico</option>
+					<option value="Guanajuato">Guanajuato</option>
+					<option value="Guerrero">Guerrero</option>
+					<option value="Hidalgo">Hidalgo</option>
+					<option value="Jalisco">Jalisco</option>
+					<option value="Michoacán">Michoac&aacute;n</option>
+					<option value="Morelos">Morelos</option>
+					<option value="DF">M&eacute;xico, D.F.</option>
+					<option value="Nayarit">Nayarit</option>
+					<option value="Nuevo León">Nuevo Le&oacute;n</option>
+					<option value="Oaxaca">Oaxaca</option>
+					<option value="Puebla">Puebla</option>
+					<option value="Querétaro">Quer&eacute;taro</option>
+					<option value="Quintana Roo">Quintana Roo</option>
+					<option value="San Luis Potosí">San Luis Potos&iacute;</option>
+					<option value="Sinaloa">Sinaloa</option>
+					<option value="Sonora">Sonora</option>
+					<option value="Tabasco">Tabasco</option>
+					<option value="Tamaulipas">Tamaulipas</option>
+					<option value="Taxcala">Taxcala</option>
+					<option value="Veracruz">Veracruz</option>
+					<option value="Yucatán">Yucat&aacute;n</option>
+					<option value="Zacatecas">Zacatecas</option>
+				</select>				 
+					
+				
+				
+				
+				<br>
+				<br>
+				Tel&eacute;fono: <input type="text" name="telefono" onblur="checarTel(this)" placeholder="Telefono"/>
+				<br>
+				<br>
+				Celular: <input type="text" name="celular" onblur="checarTel(this)" placeholder="Celular"/>
+				<br>
+				<br>
+				Email: <input type="text" name="email" onblur="checarMail(this)" placeholder="Email"/>
+				<br>
+		</fieldset>
+
+		<br>
+		
+		<fieldset style="border:2px solid red">
+		<legend><img src="imagenes/datospadres.jpg"></legend>
+			<br>
+			Nombre del padre: 
+			 <input type="text" name="apellido_paterno_padre" onblur="checarTextos(this)" placeholder="Apellido paterno"/>
+			 <input type="text" name="apellido_materno_padre"  onblur="checarTextos(this)" placeholder="Apellido materno"/>
+			 <input type="text" name="nombre_padre" onblur="checarTextos(this)" placeholder="Nombre(s)"/>
+			 <br>
+			 <br>
+			 Estado civil: <input type="text" name="edcivil_padre" placeholder="Estado civil"/>			
+			 Edad <input type="text" name="edad_padre" onblur="checarNumeros(this)" placeholder="Edad"/>
+			 Tel&eacute;fono <input type="text"  name="telefono_padre" onblur="checarTel(this)" placeholder="Telefono"/>
+			 <br>
+			 <br>
+			 Oficio o profesi&oacute;n: <input type="text" name="oficio_padre" onblur="checarTextos(this)" placeholder="Oficio"/>			
+			 Ingreso Mensual: $<input type="text" name="ingreso_padre" placeholder="Ingreso"/>MXN
+			 <br>
+			 <br>Nombre de la empresa donde labora: <input type="text" name="empresa_padre" placeholder="Nombre de la empresa"/>  
+			 <br>
+			 <br>
+			 <br>
+			 Nombre de la madre: 
+			 <input type="text" name="apellido_paterno_madre" onblur="checarTextos(this)" placeholder="Apellido paterno"/>
+			 <input type="text" name="apellido_materno_madre" onblur="checarTextos(this)" placeholder="Apellido materno"/>
+			 <input type="text" name="nombre_madre" onblur="checarTextos(this)" placeholder="Nombre(s)"/>
+			 <br>
+			 <br>
+			 Estado civil: <input type="text" name="edcivil_madre" placeholder="Estado civil"/>			
+			 Edad <input type="text" name="edad_madre" onblur="checarEdad(this)" placeholder="Edad"/>
+			 Tel&eacute;fono <input type="text" name="telefono_madre" onblur="checarTel(this)"placeholder="Telefono"/>
+			<br>
+			<br>
+			Oficio o profesi&oacute;n: <input type="text"  name="oficio_madre" onblur="checarTextos(this)" placeholder="Oficio"/>			
+			Ingreso Mensual: $<input type="text" name="ingreso_madre" placeholder="Ingreso"/>MXN
+			<br>
+			<br>
+			Nombre de la empresa donde labora: <input type="text" name="empresa_madre" placeholder="Nombre de la empresa"/>	
+		</fieldset>
+
+		<br>
+		
+		<fieldset style="border:2px solid orange">
+			<legend><img src="imagenes/salud.jpg"></legend>
+			<br>
+			Si el alumno padece de alguna enfermedad mencione cu&aacute;l, de lo contrario deje en blanco
+			<input type="text" name="apellido_paterno_alumno"/>
+			<br>
+			<br>
+			¿El alumno presenta alguna discapacidad?
+			<br>
+			<br>
+			<input type="checkbox" name="discapacidad" value="ninguna" id="ninguna" >Ninguna<br>
+			<input type="checkbox" name="discapacidad" value="vista" id="vista" >Problemas de vista<br>
+			<input type="checkbox" name="discapacidad" value="dislexia" id="dislexia" >Problemas de dislexia<br>
+			<input type="checkbox" name="discapacidad" value="lenguaje" id="lenguaje" >Problemas de lenguaje<br>
+			<input type="checkbox" name="discapacidad" value="oido" id="oido" >Problemas de oido<br>
+			<input type="checkbox" name="discapacidad" value="otra" id="otra"  onclick="document.getElementById('otra_discapacidad').style. display = (this.checked) ? 'block' : 'none'"/>Otra<br> 
+				 <div id="otra_discapacidad" style="display: none" > 
+					<!-- aquí lo que quieras mostrar/ocultar --> 
+						<input type="text"  name="otra" /> <br> 
+						</div>
+			
+		</fieldset>
+
+		<br>
+		
+		<fieldset style="border:2px solid orange">
+		<legend><img src="imagenes/adicional.jpg"></legend>
+			<br>
+			Indique c&oacute;mo se enter&oacute; sobre Ciudad de los Ni&ntilde;os:
+			<br>
+			<br>
+			<input type="checkbox" name="publicidad" value="sorteo" id="sorteo" >Por el sorteo<br>
+			<input type="checkbox" name="publicidad" value="amigos" id="amigos" >Amigos<br>
+			<input type="checkbox" name="publicidad" value="television" id="television" >Televisi&oacute;n<br>
+			<input type="checkbox" name="publicidad" value="internet" id="internet" >Internet<br>
+			<input type="checkbox" name="publicidad" value="periodico" id="periodico" >Peri&oacute;dico<br>
+			<input type="checkbox" name="publicidad" value="otro" id="otro"  onclick="document.getElementById('otro_medio').style. display = (this.checked) ? 'block' : 'none'"/>Otro<br> 
+				 <div id="otro_medio" style="display: none" > 
+					<!-- aquí lo que quieras mostrar/ocultar --> 
+						<input type="text"  name="otro" /> <br> 
+						</div>
+		</fieldset>
+		<br>
+		<table style="HEIGHT:40%;WIDTH:100%;">
+			<tr>
+				<td style="HEIGHT:100%;WIDTH:50%;">
+				<div><a href="principal.html"> <input type="button" value="Regresar"  class="text2" /> </a> </div>
+				</td>
+				
+				<td style="HEIGHT:100%;WIDTH:50%;">
+				<div align="right"> <input type="submit" value="Registrar"  class="text2" /> </div>
+				</td>
+			</tr>
+		</table>
+		
+		</td>
+
+		</fieldset>
+		
+		<td style="HEIGHT:100%;WIDTH:20%;"> </td>
+		</tr>
+		
+		</table>
+		</form>
+
+	</body>
+</html>

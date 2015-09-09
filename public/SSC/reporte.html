@@ -1,0 +1,168 @@
+<html>
+
+	<head>
+	<title>Ciudad de los Ni&ntilde;os - Bienvenido </title>
+	<link rel="shortcut icon" href="imagenes/icono.ico" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="reporte.js"></script>
+	<script type="text/javascript">
+	
+	<!--
+	//Obtener la fecha. 
+	fecha = new Date();
+	dia = fecha.getDate();
+	mes = fecha.getMonth();
+	año = fecha.getFullYear();
+	
+	
+	//Mes
+	if(mes == 0) 
+	mostrarmes = "Enero " 
+
+	else if(mes ==1) 
+	mostrarmes = "Febrero " 
+
+	else if(mes ==2) 
+	mostrarmes = "Marzo " 
+
+	else if(mes ==3) 
+	mostrarmes = "Abril " 
+
+	else if(mes ==4) 
+	mostrarmes = "Mayo " 
+
+	else if(mes ==5) 
+	mostrarmes = "Junio " 
+
+	else if(mes ==6) 
+	mostrarmes = "Julio " 
+
+	else if(mes ==7) 
+	mostrarmes = "Agosto " 
+
+	else if(mes ==8) 
+	mostrarmes = "Septiembre " 
+
+	else if(mes ==9) 
+	mostrarmes = "Octubre " 
+
+	else if(mes ==10) 
+	mostrarmes = "Noviembre " 
+
+	else if(mes ==11) 
+	mostrarmes = "Diciembre "
+	//-->
+
+	</script>
+	</head>
+	
+	<body>
+		<form name="reporte" method="post" action="reporte.php"> 
+		<table style="HEIGHT:20%;WIDTH:100%;" class="text1">
+	
+		<tr>
+		
+		<!-- Primer espacio en blanco -->
+		<td style="HEIGHT:100%;WIDTH:20%;"> </td>
+	
+		
+		<!-- Espacio de trabajo -->
+		
+		<td style="HEIGHT:100%;WIDTH:60%;">
+		<fieldset class="fieldset4">
+		
+		<table style="HEIGHT:100%;WIDTH:100%;">
+		<tr>
+		
+		<!-- Tabla/Parte para el logo -->
+		<td  style="HEIGHT:100%;WIDTH:20%;">
+		<img src="imagenes/logo.jpg" alt="Logo Ciudad de los Niños">
+		</td>
+		
+		<td style="HEIGHT:100%;WIDTH:60%;">
+		<center> Direcci&oacute;n de Desarrollo Social y Comunicaci&oacute;n </center>
+		<center> Proceso de Admisi&oacute;n-Inscripci&oacute;n </center>
+		<br>
+		<h1 align="center"> REPORTES </h1>
+		</td>
+		
+		
+		<td  style="HEIGHT:100%;WIDTH:20%;">
+		<center> RE-AI-003 </center>
+		<center> Versi&oacute;n 1 </center>
+		<center> <script>document.write(dia+" de "+mostrarmes+" del "+año+"");</script> </center>
+		</td>
+		</tr>	
+		</table>
+		
+		<br>
+		<br>
+		
+			<fieldset style="border:2px solid blue">
+			<legend> Muestra de Reportes </legend>
+			<br>
+			<br>
+			<div>
+			Escoge el tipo de reporte que deseas:
+			<br>
+			<br>
+			<select id="tipo_rep" name="tipo_reporte" onchange="changeFunc()">
+				<option value="vacio">--</option>
+				<option value="grado_nivel" >Presolicitudes Por grado y nivel</option>
+				<option value="rechazadas"> Presolicitudes Rechazadas y motivo</option>
+				<option value="lisata_espera"> Presolicitudes en lista de espera</option>
+			</select>
+			</div>
+			<br>
+			<br>
+
+			
+		<div id="fecharep" align="center" style="display: none">
+			Escoge la fecha a partir de la cual quieres que se generen los reportes.
+			<br>
+			<br>
+			
+			Mes:
+			<select name="mes_reporte">
+					<option value="none">--</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			</select>
+			Año: <input type="text" name="year_reporte"/>
+		</div>
+			</fieldset>
+			<br>
+			
+			<table style="HEIGHT:50%;WIDTH:100%;">
+			<tr>
+				<td style="HEIGHT:100%;WIDTH:50%;">
+				<div><a href="principal.html"> <input type="button" value="Regresar"  class="text2" /> </a> </div>
+				</td>
+				
+				<td style="HEIGHT:100%;WIDTH:50%;">
+				<div align="right"> <input type="submit" value="Generar Reporte"  class="text2" /> </div>
+				</td>
+			</tr>
+			</table>
+		</td>
+		
+		
+		<!-- Espacio 3 en blanco -->
+		<td style="HEIGHT:100%;WIDTH:20%;"> </td>
+		</tr>
+		
+		</table>
+		</form>
+
+	</body>
+</html>
